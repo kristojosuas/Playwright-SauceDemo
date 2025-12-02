@@ -9,7 +9,7 @@ test.describe('TS-02: Product Catalog Management', () => {
         await inventoryPage.verifyProductPageLoaded();
     });
 
-    test('TC-01: Display product inventory', { tag: [TestTags.SMOKE, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.INVENTORY] }, async ({ inventoryPage }) => {
+    test('TC-01: Display product inventory', { tag: [TestTags.SMOKE, TestTags.E2E, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.INVENTORY] }, async ({ inventoryPage }) => {
         await expect(inventoryPage.page).toHaveURL(/.*inventory.html/);
 
         await expect(inventoryPage.header.cartIcon).toBeVisible();
@@ -19,7 +19,7 @@ test.describe('TS-02: Product Catalog Management', () => {
         expect(productCount).toBe(6);
     });
 
-    test('TC-02: Display product details and verify information', { tag: [TestTags.POSITIVE, TestTags.HIGH, TestTags.INVENTORY] }, async ({ inventoryPage }) => {
+    test('TC-02: Display product details and verify information', { tag: [TestTags.E2E, TestTags.POSITIVE, TestTags.HIGH, TestTags.INVENTORY] }, async ({ inventoryPage }) => {
         const listPrice = await inventoryPage.getProductPriceFromList(TestProduct.backpack.name);
         const listDescription = await inventoryPage.getProductDescriptionFromList(TestProduct.backpack.name);   
 

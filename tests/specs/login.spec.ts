@@ -8,7 +8,7 @@ test.describe('TS-01: Login Functionality', () => {
         await loginPage.navigateTo('/');
     });
 
-    test('TC-01: Successful login with valid user', { tag: [TestTags.SMOKE, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.LOGIN] }, async ({ loginPage }) => {
+    test('TC-01: Successful login with valid user', { tag: [TestTags.SMOKE, TestTags.E2E, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.LOGIN] }, async ({ loginPage }) => {
         await loginPage.verifyLoginPageLoaded();
 
         await loginPage.login(TestUsers.standardUser.username, TestUsers.standardUser.password);

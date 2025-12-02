@@ -1,6 +1,7 @@
 export const TestTags = {
     // Test types
     SMOKE: '@smoke',
+    E2E: '@e2e',
     
     // Test natures
     POSITIVE: '@positive',

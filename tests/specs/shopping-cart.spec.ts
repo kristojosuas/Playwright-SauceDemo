@@ -8,7 +8,7 @@ test.describe('TS-03: Shopping Cart Management', () => {
         await loginPage.login(TestUsers.standardUser.username, TestUsers.standardUser.password);
     });
 
-    test('TC-01: Add single product to cart and verify in cart page', { tag: [TestTags.SMOKE, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.CART] }, async ({ inventoryPage, cartPage }) => {
+    test('TC-01: Add single product to cart and verify in cart page', { tag: [TestTags.SMOKE, TestTags.E2E, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.CART] }, async ({ inventoryPage, cartPage }) => {
         const product = await inventoryPage.getProductByName(TestProduct.backpack.name);
         expect(product).not.toBeNull();
         await product!.addToCart();
@@ -27,7 +27,7 @@ test.describe('TS-03: Shopping Cart Management', () => {
         expect(await cartPage.getPrice()).toBe(TestProduct.backpack.price);
     });
 
-    test('TC-02: Add single product from product details to cart', { tag: [TestTags.POSITIVE, TestTags.HIGH, TestTags.CART] }, async ({ inventoryPage, cartPage }) => {
+    test('TC-02: Add single product from product details to cart', { tag: [TestTags.E2E, TestTags.POSITIVE, TestTags.HIGH, TestTags.CART] }, async ({ inventoryPage, cartPage }) => {
         const productDetailPage = await inventoryPage.viewProductDetails(TestProduct.backpack.name);
         expect(productDetailPage).not.toBeNull();
         await productDetailPage!.addToCart();
@@ -39,7 +39,7 @@ test.describe('TS-03: Shopping Cart Management', () => {
         expect(await cartPage.getCartItemCount()).toBe(1);
     });
 
-    test('TC-03: Add multiple items to cart', { tag: [TestTags.POSITIVE, TestTags.HIGH, TestTags.CART] }, async ({ inventoryPage, cartPage }) => {
+    test('TC-03: Add multiple items to cart', { tag: [TestTags.E2E, TestTags.POSITIVE, TestTags.HIGH, TestTags.CART] }, async ({ inventoryPage, cartPage }) => {
         const productsToAdd = [TestProduct.backpack.name, TestProduct.bikeLight.name];
 
         for (const productName of productsToAdd) {

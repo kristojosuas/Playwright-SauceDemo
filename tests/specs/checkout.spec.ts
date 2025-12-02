@@ -91,7 +91,7 @@ test.describe('TS-04: Checkout Process', () => {
         await checkoutPage.verifyErrorMessage('Error: Invalid input. Please check your information and try again.');
     });
 
-    test('TC-07: Complete purchase and verify order completion', { tag: [TestTags.SMOKE, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.CHECKOUT] }, async ({ cartPage, checkoutPage }) => {
+    test('TC-07: Complete purchase and verify order completion', { tag: [TestTags.SMOKE, TestTags.E2E, TestTags.POSITIVE, TestTags.CRITICAL, TestTags.CHECKOUT] }, async ({ cartPage, checkoutPage }) => {
         await cartPage.proceedToCheckout();
 
         await checkoutPage.fillCheckoutInformation(
