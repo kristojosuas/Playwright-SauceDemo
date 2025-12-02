@@ -2,6 +2,11 @@
 
 A comprehensive test automation framework for the SauceDemo web application using Playwright and TypeScript, built following Page Object Model (POM) with KISS and DRY principles.
 
+## Test Plan and Scenario Documentation
+
+- [Test Plan Documentation](https://docs.google.com/document/d/1hVKvV5rbE9PKwwA_cLB7tVxAZh44NimV/edit?usp=sharing&ouid=114940986815050772395&rtpof=true&sd=true)
+- [Test Scenario Documentation](https://docs.google.com/spreadsheets/d/1Np31MMEFzXZ7h1iNPdaPyU_ikXIagx1ijXJCk9FCqw4/edit?usp=sharing)
+
 ## 🎯 Features
 
 - TypeScript Support: Fully typed for better IDE support and error catching
