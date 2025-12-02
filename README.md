@@ -6,8 +6,8 @@ A comprehensive test automation framework for the SauceDemo web application usin
 
 - TypeScript Support: Fully typed for better IDE support and error catching
 - Page Object Model: Organized and maintainable page classes
-- KISS Principle: Reusable component and utilities
-- DRY Principle: Favor simple, easy-to-understand solutions
+- DRY Principle: Reusable component and utilities
+- KISS Principle: Favor simple, easy-to-understand solutions
 - Cross-browser Testing: Chrome, Firefox, and Safari support
 - Reporting: HTML report with screenshot
 - CI/CD Ready: Configured for continuous integration
