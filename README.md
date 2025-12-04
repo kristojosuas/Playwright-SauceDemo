@@ -14,7 +14,7 @@ A comprehensive test automation framework for the SauceDemo web application usin
 - DRY Principle: Reusable component and utilities
 - KISS Principle: Favor simple, easy-to-understand solutions
 - Cross-browser Testing: Chrome, Firefox, and Safari support
-- Reporting: HTML report with screenshot
+- Reporting: HTML and Allure reports with screenshots
 - CI/CD Ready: Configured for continuous integration
 
 ## 🏗️ Project Structure
@@ -45,7 +45,9 @@ SauceDemo/
 │   └── utils/                   # Utility classes
 │       └── tags.ts
 └── reports/
-    ├── playwright-report/       # Test report (generated)
+│   ├── playwright-report/       # Test report (generated)
+│   └── allure-report/           # Allure report generated from allure-results
+└── allure-results/              # Allure raw results (generated)
 ```
 
 ## 🚀 Getting Started
@@ -178,6 +180,7 @@ TIMEOUT=30000
 
 1. Console Output: Real-time test execution feedback
 2. HTML Report: `playwright-reports/index.html`
+3. Allure Report: `allure-report/`
 
 ### 📝 Test Data
 
