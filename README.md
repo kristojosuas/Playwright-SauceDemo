@@ -195,7 +195,7 @@ Password for all users: `secret_sauce`
 GitHub Action workflow included for:
 
 - Automated testing on push
-  = Test result artifact
+- Test result artifact
 
 ### 📚 Resources
 
