@@ -14,12 +14,13 @@ A comprehensive test automation framework for the SauceDemo web application usin
 - DRY Principle: Reusable component and utilities
 - KISS Principle: Favor simple, easy-to-understand solutions
 - Cross-browser Testing: Chrome, Firefox, and Safari support
-- Reporting: HTML report with screenshot and Allure report
+- Reporting: HTML report with screenshot
 - CI/CD Ready: Configured for continuous integration
 
 ## 🏗️ Project Structure
 
 ```bash
+SauceDemo/
 ├── tests/
 │   ├── data/                    # Test data and constants
 │   │   └── test-data.ts
@@ -43,7 +44,8 @@ A comprehensive test automation framework for the SauceDemo web application usin
 │   │   └── logout.spec.ts
 │   └── utils/                   # Utility classes
 │       └── tags.ts
-├── playwright-report/           # Test report (generated)
+└── reports/
+    ├── playwright-report/       # Test report (generated)
 ```
 
 ## 🚀 Getting Started
