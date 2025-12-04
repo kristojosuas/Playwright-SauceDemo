@@ -14,7 +14,7 @@ A comprehensive test automation framework for the SauceDemo web application usin
 - DRY Principle: Reusable component and utilities
 - KISS Principle: Favor simple, easy-to-understand solutions
 - Cross-browser Testing: Chrome, Firefox, and Safari support
-- Reporting: HTML report with screenshot
+- Reporting: HTML report with screenshot and Allure report
 - CI/CD Ready: Configured for continuous integration
 
 ## 🏗️ Project Structure
@@ -192,7 +192,10 @@ Password for all users: `secret_sauce`
 
 ### 🔄 CI/CD Integration
 
-- GitHub Actions
+GitHub Action workflow included for:
+
+- Automated testing on push
+  = Test result artifact
 
 ### 📚 Resources
 
